@@ -1,0 +1,124 @@
+:root{
+ /* Primary */
+
+--Pale_blue: hsl(225, 100%, 94%);
+--Bright_blue: hsl(245, 75%, 52%);
+
+/* Neutral */
+
+--Very_pale_blue: hsl(225, 100%, 98%);
+--Desaturated_blue: hsl(224, 23%, 55%);
+--Dark_blue: hsl(223, 47%, 23%);
+}
+
+*,*::before,*,*::after{
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Red Hat Display';
+}
+body{
+    background-color:var(--Pale_blue) ;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.hero-svg{
+    width: 20rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+main{
+   background-color: var(--Very_pale_blue);
+   text-align: center;
+   width: 20rem;
+   border-bottom-left-radius:1rem ;
+   border-bottom-right-radius: 1rem;
+   padding: .5rem 1.5rem;
+}
+h1{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: .8rem;
+}
+p{ 
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--Desaturated_blue);
+    margin-bottom: 1.5rem;
+}
+.music{
+    background-color: var(--Pale_blue);
+    display: flex;
+   justify-content: space-evenly;
+    align-items: center;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;   
+}
+.music img{
+    margin-left: -1rem;
+}
+.price{
+    margin-left: -1rem;
+    font-size: 1rem;
+}
+.price h2{
+      margin-top: 1rem;
+       font-size: 1rem;
+       font-weight: 900;
+}
+.price p{
+    margin-bottom: 1.2rem;
+}
+.music a{
+    margin-right: -1rem;
+}
+button{
+    margin-top: 1rem;
+    background-color: var(--Bright_blue);
+    border: none;
+    color: #fff;
+    width: 17rem;
+    padding: .9rem;
+    border-radius: .5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    box-shadow: 0.1rem 0.5rem 0.75rem rgba(151, 144, 244, 0.8);
+}
+a{
+    font-weight: 700;
+}
+p a{
+    font-family: 'Red Hat Display';
+    text-decoration: none;
+    font-weight:700;
+    color: var(--Desaturated_blue);
+}
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* breakpoint screen */
+@media only screen and (min-width: 900px) {
+    html{
+        font-size: 17px;
+    }
+}
+@media only screen and (min-width:1440px){
+   html{font-size: 17.5px;
+
+    }
+   body{
+    background: url(./images/pattern-background-desktop.svg) no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+
+  }
+}
